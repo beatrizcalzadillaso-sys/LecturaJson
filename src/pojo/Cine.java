@@ -3,10 +3,10 @@ package pojo;
 import java.util.ArrayList;
 
 public class Cine {
-	private String nombre;
-	private String ciudad;
-	private String direccion;
-	private ArrayList<Pelicula> peliculas;
+	public String nombre;
+	public String ciudad;
+	public String direccion;
+	public ArrayList<Pelicula> peliculas;
 	
 	
 	public Cine() {
