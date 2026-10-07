@@ -1,44 +1,43 @@
 
 package pojo;
 
-import java.time.LocalTime;
 
 public class Sesion {
-	private LocalTime hora;
-	private int sala;
-	private float precio;
+	private String hora;
+	private String sala;
+	private String precio;
 	
 	public Sesion() {
 		
 	}
 
-	public Sesion(LocalTime hora, int sala, float precio) {
+	public Sesion(String hora, String sala, String precio) {
 		this.hora = hora;
 		this.sala = sala;
 		this.precio = precio;
 	}
 
-	public LocalTime getHora() {
+	public String getHora() {
 		return hora;
 	}
 
-	public void setHora(LocalTime hora) {
+	public void setHora(String hora) {
 		this.hora = hora;
 	}
 
-	public int getSala() {
+	public String getSala() {
 		return sala;
 	}
 
-	public void setSala(int sala) {
+	public void setSala(String sala) {
 		this.sala = sala;
 	}
 
-	public float getPrecio() {
+	public String getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(float precio) {
+	public void setPrecio(String precio) {
 		this.precio = precio;
 	}
 	
