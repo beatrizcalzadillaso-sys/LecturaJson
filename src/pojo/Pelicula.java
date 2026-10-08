@@ -51,7 +51,7 @@ public class Pelicula {
 		this.sesiones = sesiones;
 	}
 	
-	
+
 	
 	
 }

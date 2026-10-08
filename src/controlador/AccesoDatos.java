@@ -66,6 +66,24 @@ public class AccesoDatos {
 				
 				}
 			}
+		
+		//	BUSQUEDA 3
+		System.out.println("\n\nBusqueda 3: ");
+		String busqueda3= "Ciencia ficcion";
+		// RECORRER CINES
+		System.out.println("Peliculas de "+busqueda3);
+		for (int i=0; i< listaCines.size(); i++) {
+			ArrayList<Pelicula> listaPelis = listaCines.get(i).getPeliculas();
+			// RECORRER PELICULAS
+			for(int j=0; j< listaPelis.size(); j++) {
+				// SI LA PELICULA SE LLAMA AVATAR, IMPRIMIR LAS SESIONES DE AVATAR
+				if(listaPelis.get(j).getGenero().toLowerCase().contains("ciencia")) {
+					System.out.println(listaCines.get(i).getNombre()+" -> "+listaPelis.get(j).getTitulo());
+					}
+				
+				}
+			}
+		
 		} catch (IOException exc) {
 			exc.printStackTrace();
 		}
